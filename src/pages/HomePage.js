@@ -44,16 +44,102 @@ export default function HomePage(){
               {['🏆 Multi-Award Winner','🏛 CBN Licensed','🛡 NDIC Insured','✅ ISO 9001:2015'].map((t,i)=><span key={i} className="hero-trust-tag">{t}</span>)}
             </div>
           </div>
-          <div className="hero-card">
-            <div className="hero-card-lbl">PORTFOLIO PERFORMANCE</div>
-            <div className="hero-metrics">
-              {[{v:'₦30B+',l:'Total Disbursed',t:'↑ 24% YoY'},{v:'30K+',l:'Active Clients',t:'↑ 18% YoY'},{v:'12+',l:'States Covered',t:'Expanding'},{v:'5',l:'Subsidiaries',t:'Full Ecosystem'}].map((m,i)=>(
-                <div key={i} className="hero-metric">
-                  <div className="hm-val">{m.v}</div>
-                  <div className="hm-lbl">{m.l}</div>
-                  <div className="hm-trend">{m.t}</div>
-                </div>
-              ))}
+          <div className="hero-visual">
+            <div className="hv-ring hv-ring1"/>
+            <div className="hv-ring hv-ring2"/>
+            <div className="hv-ring hv-ring3"/>
+            <div className="hv-frame">
+              <div className="hv-frame-bg"/>
+              <svg className="hv-person" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="personGlow" cx="50%" cy="45%" r="55%">
+                    <stop offset="0%" stopColor="#1E5EFF" stopOpacity="0.22"/>
+                    <stop offset="100%" stopColor="transparent" stopOpacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="skinGrad" x1="0%" y1="0%" x2="20%" y2="100%">
+                    <stop offset="0%" stopColor="#9B6535"/>
+                    <stop offset="100%" stopColor="#7A4820"/>
+                  </linearGradient>
+                  <linearGradient id="agbadaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#0d2654"/>
+                    <stop offset="100%" stopColor="#091840"/>
+                  </linearGradient>
+                </defs>
+                <ellipse cx="160" cy="230" rx="150" ry="185" fill="url(#personGlow)"/>
+                <path d="M10,420 Q20,320 60,290 Q100,265 160,260 Q220,265 260,290 Q300,320 310,420 Z" fill="url(#agbadaGrad)"/>
+                <path d="M80,420 Q85,320 120,296 Q140,280 160,278 Q180,280 200,296 Q235,320 240,420 Z" fill="rgba(0,0,0,0.15)"/>
+                <path d="M138,278 Q160,265 182,278" fill="none" stroke="#C9A227" strokeWidth="2.5" opacity="0.9"/>
+                <path d="M126,292 Q160,276 194,292" fill="none" stroke="#C9A227" strokeWidth="1.5" opacity="0.65"/>
+                <path d="M88,338 Q160,316 232,338" fill="none" stroke="#C9A227" strokeWidth="1.5" opacity="0.3"/>
+                <path d="M68,372 Q160,347 252,372" fill="none" stroke="#C9A227" strokeWidth="1.5" opacity="0.22"/>
+                <path d="M50,405 Q160,378 270,405" fill="none" stroke="#C9A227" strokeWidth="1" opacity="0.18"/>
+                <path d="M147,252 Q160,246 173,252 L176,278 Q160,272 144,278 Z" fill="url(#skinGrad)"/>
+                <ellipse cx="160" cy="188" rx="70" ry="78" fill="url(#skinGrad)"/>
+                <ellipse cx="91" cy="192" rx="11" ry="15" fill="url(#skinGrad)"/>
+                <ellipse cx="229" cy="192" rx="11" ry="15" fill="url(#skinGrad)"/>
+                <ellipse cx="91" cy="192" rx="7" ry="10" fill="#6B3D18"/>
+                <ellipse cx="229" cy="192" rx="7" ry="10" fill="#6B3D18"/>
+                <path d="M91,178 Q91,118 160,110 Q229,118 229,178 Q222,140 160,134 Q98,140 91,178 Z" fill="#1a0d00"/>
+                <path d="M91,170 Q91,132 160,124 Q229,132 229,170 Q222,138 160,132 Q98,138 91,170 Z" fill="#0d2654"/>
+                <ellipse cx="160" cy="130" rx="66" ry="15" fill="#091840"/>
+                <path d="M94,168 Q160,152 226,168" fill="none" stroke="#C9A227" strokeWidth="3" opacity="0.85"/>
+                <path d="M96,159 Q160,144 224,159" fill="none" stroke="#C9A227" strokeWidth="1" opacity="0.45"/>
+                <circle cx="160" cy="138" r="2" fill="#C9A227" opacity="0.5"/>
+                <circle cx="144" cy="141" r="1.5" fill="#C9A227" opacity="0.4"/>
+                <circle cx="176" cy="141" r="1.5" fill="#C9A227" opacity="0.4"/>
+                <path d="M126,170 Q141,163 156,168" stroke="#2a1200" strokeWidth="4" strokeLinecap="round"/>
+                <path d="M164,168 Q179,163 194,170" stroke="#2a1200" strokeWidth="4" strokeLinecap="round"/>
+                <ellipse cx="141" cy="183" rx="16" ry="11" fill="white"/>
+                <ellipse cx="179" cy="183" rx="16" ry="11" fill="white"/>
+                <circle cx="143" cy="183" r="9" fill="#1c0e02"/>
+                <circle cx="181" cy="183" r="9" fill="#1c0e02"/>
+                <circle cx="144" cy="184" r="5.5" fill="#0a0400"/>
+                <circle cx="182" cy="184" r="5.5" fill="#0a0400"/>
+                <circle cx="146" cy="181" r="2.5" fill="white" opacity="0.9"/>
+                <circle cx="184" cy="181" r="2.5" fill="white" opacity="0.9"/>
+                <path d="M125,184 Q141,192 157,184" fill="none" stroke="#6B3D18" strokeWidth="1" opacity="0.4"/>
+                <path d="M163,184 Q179,192 195,184" fill="none" stroke="#6B3D18" strokeWidth="1" opacity="0.4"/>
+                <path d="M154,200 Q147,218 139,222 Q160,229 181,222 Q173,218 166,200" fill="#6B3D18" opacity="0.55"/>
+                <circle cx="146" cy="220" r="6" fill="#5a3212" opacity="0.4"/>
+                <circle cx="174" cy="220" r="6" fill="#5a3212" opacity="0.4"/>
+                <path d="M140,221 Q137,228 140,234" fill="none" stroke="#6B3D18" strokeWidth="1.5" opacity="0.3" strokeLinecap="round"/>
+                <path d="M180,221 Q183,228 180,234" fill="none" stroke="#6B3D18" strokeWidth="1.5" opacity="0.3" strokeLinecap="round"/>
+                <path d="M140,238 Q160,256 180,238" fill="none" stroke="#5a2a08" strokeWidth="2.5" strokeLinecap="round"/>
+                <path d="M143,240 Q160,254 177,240 Q160,258 143,240 Z" fill="white" opacity="0.88"/>
+                <ellipse cx="116" cy="210" rx="20" ry="14" fill="#C9A227" opacity="0.06"/>
+                <ellipse cx="204" cy="210" rx="20" ry="14" fill="#C9A227" opacity="0.06"/>
+                <circle cx="55" cy="160" r="3" fill="#C9A227" opacity="0.4"/>
+                <circle cx="45" cy="185" r="2" fill="#1E5EFF" opacity="0.5"/>
+                <circle cx="268" cy="155" r="3" fill="#C9A227" opacity="0.35"/>
+                <circle cx="278" cy="180" r="2" fill="#1E5EFF" opacity="0.45"/>
+                <circle cx="50" cy="140" r="1.5" fill="white" opacity="0.25"/>
+                <circle cx="275" cy="138" r="1.5" fill="white" opacity="0.25"/>
+                <circle cx="40" cy="212" r="2" fill="#C9A227" opacity="0.2"/>
+                <circle cx="283" cy="210" r="2" fill="#C9A227" opacity="0.2"/>
+              </svg>
+            </div>
+            <div className="hv-card hv-card--tl">
+              <div className="hvc-row"><span className="hvc-ico">₦</span><span className="hvc-trend">↑24%</span></div>
+              <div className="hvc-val">30B+</div>
+              <div className="hvc-lbl">Total Disbursed</div>
+            </div>
+            <div className="hv-card hv-card--tr">
+              <div className="hvc-row"><span className="hvc-ico">👥</span><span className="hvc-trend">↑18%</span></div>
+              <div className="hvc-val">30K+</div>
+              <div className="hvc-lbl">Active Clients</div>
+            </div>
+            <div className="hv-card hv-card--bl">
+              <div className="hvc-row"><span className="hvc-ico">🏆</span></div>
+              <div className="hvc-val">5+</div>
+              <div className="hvc-lbl">National Awards</div>
+            </div>
+            <div className="hv-card hv-card--br">
+              <div className="hvc-row"><span className="hvc-ico">📍</span></div>
+              <div className="hvc-val">12+</div>
+              <div className="hvc-lbl">States Covered</div>
+            </div>
+            <div className="hv-badge-cbn">
+              <span className="hv-cbn-dot"/>&nbsp;CBN Licensed &amp; Regulated
             </div>
           </div>
         </div>
