@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0A2342;--navy2:#12355B;--accent:#1E5EFF;--accent2:#1550e0;
+  --gold:#C9A227;--bg:#F8FAFC;--white:#fff;--success:#0EA35A;
+  --gray1:#64748B;--gray2:#94A3B8;--gray3:#CBD5E1;--gray4:#E2E8F0;
+  --light-blue:#DCE9FF;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:#0F172A;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font-family:'Manrope',sans-serif;cursor:pointer}
+input,select,textarea{font-family:'Manrope',sans-serif}
+.container{max-width:1280px;margin:0 auto;padding:0 48px}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:var(--gray3);border-radius:3px}
+@media(max-width:768px){.container{padding:0 20px}}

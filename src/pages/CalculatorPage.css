@@ -1,0 +1,57 @@
+.calc-page{}
+.pg-hero{background:var(--navy);position:relative;padding:80px 0 60px;overflow:hidden}
+.pg-hero-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(30,94,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(30,94,255,.06) 1px,transparent 1px);background-size:50px 50px}
+.pg-hero-inner{position:relative;z-index:2}
+.pg-hero-label{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
+.pg-hero-h1{font-family:'Playfair Display',serif;font-size:52px;color:#fff;font-weight:600;line-height:1.1;letter-spacing:-.5px;margin-bottom:16px}
+.pg-hero-h1 em{font-style:italic;color:var(--gold)}
+.pg-hero-p{color:rgba(255,255,255,.6);font-size:17px;line-height:1.6;max-width:560px}
+.section{padding:80px 0}
+.mode-tabs{display:flex;gap:8px;margin-bottom:40px;background:var(--bg);border:1px solid var(--gray4);border-radius:12px;padding:6px;width:fit-content}
+.mode-tab{padding:11px 24px;border-radius:8px;border:none;background:transparent;color:var(--gray1);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s}
+.mode-tab--active{background:var(--navy);color:#fff;box-shadow:0 2px 8px rgba(10,35,66,.15)}
+.calc-layout{display:grid;grid-template-columns:380px 1fr;gap:32px;align-items:start}
+.calc-inputs{background:var(--navy);border-radius:20px;padding:36px;position:sticky;top:90px}
+.ci-header{margin-bottom:28px}
+.ci-title{color:#fff;font-size:17px;font-weight:700;margin-bottom:4px}
+.ci-sub{color:rgba(255,255,255,.4);font-size:13px}
+.ci-field{margin-bottom:24px}
+.ci-field-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;color:rgba(255,255,255,.5);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px}
+.ci-field-row strong{color:#fff;font-size:16px;font-family:'Playfair Display',serif;text-transform:none;letter-spacing:0}
+.ci-range{-webkit-appearance:none;width:100%;height:4px;border-radius:2px;background:rgba(255,255,255,.15);outline:none;cursor:pointer;margin-bottom:6px}
+.ci-range::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 0 4px rgba(30,94,255,.25)}
+.ci-range-labels{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.3)}
+.ci-result-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:24px;margin-top:24px}
+.ci-result-box--invest{border-color:rgba(52,211,153,.2);background:rgba(52,211,153,.04)}
+.ci-result-label{color:rgba(255,255,255,.4);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
+.ci-result-big{font-family:'Playfair Display',serif;font-size:40px;color:#fff;font-weight:600;line-height:1;letter-spacing:-1px}
+.ci-result-sub{color:rgba(255,255,255,.35);font-size:12px;margin-bottom:18px;margin-top:3px}
+.ci-breakdown{display:flex;flex-direction:column;gap:0;margin-bottom:16px}
+.ci-bd-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.ci-bd-row:last-child{border-bottom:none}
+.ci-bd-row span{color:rgba(255,255,255,.45);font-size:12px}
+.ci-bd-row strong{color:#fff;font-size:13px;font-weight:600}
+.ci-cta{display:block;text-align:center;padding:12px;background:var(--accent);color:#fff;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;transition:background .2s;margin-top:4px}
+.ci-cta:hover{background:var(--accent2)}
+.calc-chart-area{display:flex;flex-direction:column;gap:20px}
+.chart-card{background:#fff;border:1px solid var(--gray4);border-radius:16px;padding:28px}
+.chart-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:20px}
+.chart-wrap{width:100%}
+.milestones-card{background:#fff;border:1px solid var(--gray4);border-radius:16px;padding:28px}
+.ms-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:16px}
+.ms-list{display:flex;flex-direction:column;gap:10px}
+.ms-row{display:flex;align-items:center;gap:16px;padding:12px 16px;background:var(--bg);border-radius:10px;border:1px solid var(--gray4)}
+.ms-month{font-size:12px;font-weight:700;color:var(--gray1);width:64px;flex-shrink:0}
+.ms-info{flex:1;display:flex;justify-content:space-between;align-items:center}
+.ms-info span{font-size:12px;color:var(--gray2)}
+.ms-info strong{font-size:14px;font-weight:700;color:var(--navy)}
+.ms-badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;white-space:nowrap}
+.ms-badge--gain{background:#DCFCE7;color:#16A34A}
+.ms-badge--paid{background:#DCE9FF;color:#1E5EFF}
+@media(max-width:1200px){.calc-layout{grid-template-columns:340px 1fr}}
+@media(max-width:1024px){
+  .calc-layout{grid-template-columns:1fr}
+  .calc-inputs{position:relative;top:0}
+  .pg-hero-h1{font-size:36px}
+  .mode-tabs{width:100%}
+}

@@ -1,0 +1,36 @@
+.ft{background:var(--navy);color:rgba(255,255,255,.6);font-size:13px}
+.ft-top{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr 1fr;gap:40px;padding:60px 48px 48px;max-width:1440px;margin:0 auto}
+.ft-brand p{font-size:13px;line-height:1.7;max-width:260px;margin-bottom:20px}
+.ft-logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:16px}
+.ft-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--accent),#4D8EFF);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff}
+.ft-name{color:#fff;font-size:15px;font-weight:700}
+.ft-name span{color:var(--gold);font-weight:400}
+.ft-sub{color:rgba(255,255,255,.35);font-size:10px}
+.ft-socials{display:flex;gap:8px;margin-bottom:20px}
+.ft-social{width:34px;height:34px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:12px;font-weight:700;cursor:pointer;text-transform:uppercase;transition:all .2s}
+.ft-social:hover{background:rgba(30,94,255,.2);border-color:rgba(30,94,255,.3);color:#fff}
+.ft-cbn{display:flex;align-items:center;gap:10px;background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.15);border-radius:8px;padding:10px 14px}
+.ft-cbn-badge{background:rgba(201,162,39,.15);border:1px solid rgba(201,162,39,.3);color:var(--gold);font-size:10px;font-weight:800;padding:5px 9px;border-radius:5px}
+.ft-cbn-title{color:rgba(255,255,255,.7);font-size:12px;font-weight:600}
+.ft-cbn-num{color:rgba(255,255,255,.35);font-size:10px}
+.ft-col h4{color:#fff;font-size:13px;font-weight:700;margin-bottom:16px}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-col ul li a{color:rgba(255,255,255,.55);text-decoration:none;transition:color .2s}
+.ft-col ul li a:hover{color:#fff}
+.ft-mid{border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);padding:24px 48px;max-width:1440px;margin:0 auto}
+.ft-trust{display:flex;justify-content:space-around;flex-wrap:wrap;gap:16px}
+.ft-trust-item{display:flex;align-items:center;gap:12px;padding:8px}
+.ft-trust-ico{font-size:24px}
+.ft-trust-lbl{color:rgba(255,255,255,.7);font-size:12px;font-weight:600}
+.ft-trust-sub{color:rgba(255,255,255,.35);font-size:10px;margin-top:1px}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;padding:18px 48px;font-size:12px;max-width:1440px;margin:0 auto;color:rgba(255,255,255,.4)}
+.ft-compliance{display:flex;gap:20px}
+.ft-comp-item{display:flex;align-items:center;gap:6px}
+.ft-comp-dot{width:6px;height:6px;border-radius:50%;background:var(--success)}
+@media(max-width:1024px){
+  .ft-top{grid-template-columns:1fr 1fr;gap:32px;padding:40px 24px}
+  .ft-brand{grid-column:1/-1}
+  .ft-mid,.ft-bot{padding:20px 24px}
+  .ft-bot{flex-direction:column;gap:12px;text-align:center}
+}
+@media(max-width:600px){.ft-top{grid-template-columns:1fr}}
