@@ -26,12 +26,15 @@
 /* HERO VISUAL */
 .hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:480px}
 .hv-ring{position:absolute;border-radius:50%;border:1px solid;pointer-events:none}
-.hv-ring1{width:360px;height:360px;border-color:rgba(30,94,255,.15);animation:ring-pulse 4s ease-in-out infinite}
-.hv-ring2{width:288px;height:288px;border-color:rgba(201,162,39,.14);animation:ring-pulse 4s ease-in-out 1.3s infinite}
-.hv-ring3{width:440px;height:440px;border-color:rgba(30,94,255,.07);animation:ring-pulse 4s ease-in-out 2.6s infinite}
-.hv-frame{position:relative;width:240px;height:320px;animation:float 6s ease-in-out infinite;z-index:2;flex-shrink:0}
-.hv-frame-bg{position:absolute;inset:-28px;background:radial-gradient(ellipse at 40% 30%,rgba(201,162,39,.22) 0%,rgba(30,94,255,.16) 50%,transparent 76%);border-radius:50%;filter:blur(26px)}
-.hv-person{width:100%;height:100%;filter:drop-shadow(0 24px 56px rgba(0,0,0,.55))}
+.hv-ring1{width:420px;height:420px;border-color:rgba(30,94,255,.15);animation:ring-pulse 4s ease-in-out infinite}
+.hv-ring2{width:340px;height:340px;border-color:rgba(201,162,39,.14);animation:ring-pulse 4s ease-in-out 1.3s infinite}
+.hv-ring3{width:510px;height:510px;border-color:rgba(30,94,255,.07);animation:ring-pulse 4s ease-in-out 2.6s infinite}
+.hv-frame{position:relative;width:300px;height:400px;animation:float 6s ease-in-out infinite;z-index:2;flex-shrink:0;border-radius:220px 220px 180px 180px;overflow:hidden}
+.hv-frame-bg{position:absolute;inset:-36px;background:radial-gradient(ellipse at 40% 30%,rgba(201,162,39,.28) 0%,rgba(30,94,255,.18) 50%,transparent 76%);border-radius:50%;filter:blur(30px);z-index:0}
+.hv-frame-border{position:absolute;inset:-3px;border-radius:inherit;background:linear-gradient(145deg,rgba(201,162,39,.5),rgba(30,94,255,.3),rgba(201,162,39,.2));z-index:1;animation:border-spin 6s linear infinite}
+@keyframes border-spin{0%,100%{opacity:.6}50%{opacity:1}}
+.hv-photo{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:inherit;filter:drop-shadow(0 28px 60px rgba(0,0,0,.6))}
+.hv-photo-overlay{position:absolute;inset:0;z-index:3;background:linear-gradient(to bottom,transparent 60%,rgba(10,35,66,.55) 100%);border-radius:inherit;pointer-events:none}
 .hv-card{position:absolute;background:rgba(255,255,255,.07);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:13px 16px;min-width:126px;z-index:3;opacity:0}
 .hv-card--tl{top:28px;left:-18px;animation:hv-fade-in .7s .5s ease forwards,float-card 5s 1.2s ease-in-out infinite}
 .hv-card--tr{top:82px;right:-12px;animation:hv-fade-in .7s .7s ease forwards,float-card 5.5s 1.4s ease-in-out infinite}
